@@ -9,23 +9,31 @@
     <title>Temperature Converter</title>
 </head>
 <body>
-
-    <div class="containter">
-        <div>
-            <h2>Try to put in a number to Convert Celsius to Fahrenheit</h2>
+<main class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <h2>put in a number to Convert Celsius to Fahrenheit</h2>
         </div>
-        <div class="C">
-            <label for="Celsius" id="Cel">Celsius</label>
-            <input type="number" id="numb1">
+        <div class="row">
+            <label for="Celsius" id="Cel1">Celsius:</label>
+            <input type="number" id="numb1" oninput="cTof()">
         </div>
-        <div class="F">
-            <p><label for="Fahrenheit" id="Fheit">Fahrenheit</label> <span class="answer"></span></p>
-            
+        <div class="row">
+            <p><label for="Fahrenheit" id="Fheit1">Fahrenheit:</label> <div><span class="display1"></span></div></p>
         </div>
-
+        <div class="row">
+            <h2>put in a number to Convert Fahrenheit to Celsius</h2>
+        </div>
+        <div class="row">
+            <label for="Fahrenheit" id="Fheit2">Fahrenheit:</label>
+            <input type="number" id="numb2" oninput="fToc()">
+        </div>
+        <div class="row">
+            <p><label for="Celsius" id="Cel2">Celsius:</label> <div><span class="display2"></span></div></p>
+        </div>
 
     </div>
-
+</main>
     <!-- script -->
     <script src="./script/code.js"></script>
 </body>
